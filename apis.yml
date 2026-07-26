@@ -1,7 +1,24 @@
 aid: dulcetta
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/dulcetta.png
 name: Dulcetta
-description: Dulcetta is a company surfaced as a portfolio company of 500-global and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Dulcetta is the company behind Focus@Will (focusatwill.com), a functional-music streaming
+  service that curates instrumental soundtracks scientifically designed to improve concentration and
+  productivity during focused work. Backed by 500 Global, Dulcetta operates a consumer subscription
+  product marketing measurable gains in focus for knowledge workers, students, and creative
+  professionals who work with music. It is tracked in the API Evangelist network as a
+  portfolio-sourced lead; no public developer API or documentation surface has been identified to
+  date, so this profile carries company identity and probed domain-security posture only.
 url: https://raw.githubusercontent.com/api-evangelist/dulcetta/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
+- Music
+- Productivity
+- Streaming
+- Focus
+- Audio
+- Wellness
+- Consumer
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +45,12 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/dulcetta-domain-security.yml
 - type: Website
   url: https://focusatwill.com
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
